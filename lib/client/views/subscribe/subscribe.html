@@ -1,9 +1,14 @@
 <template name="MailChimpListSubscribe">
 	<div>
+        <input class="email" type="email" placeholder="email@example.com"/>
+        <div id="btn-submit" class="subscribe btn btn-1 btn-1e">
+            <div class="imgHolder">
+                <img src="/img/enveloppe.svg" id="enveloppeId" alt="">
+            </div>
+            <span id="btn-text icon-envelope">Send</span>
+        </div>
 	{{#if message}}
-		<p class="message">{{message}}</p>
+		<p class="message sendState">{{message}}</p>
 	{{/if}}
-		<input class="email" type="email" placeholder="email@example.com"/>
-		<button class="subscribe" type="button">Subscribe</button>
 	</div>
 </template>
